@@ -18,3 +18,5 @@ variable "name" {
     default = "Provisioned by Terraform"
 }
 
+
+variable "aws_key" {}
