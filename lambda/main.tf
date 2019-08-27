@@ -9,7 +9,7 @@ provider "archive" {}
 
 data "archive_file" "zip" {
   type = "zip"
-  source_file = "hello_lambda.py"
+  source_file = "hello_lambda.js"
   output_path = "hello_lambda.zip"
 }
 
@@ -23,11 +23,11 @@ resource "aws_lambda_function" "lambda" {
 
   role = "${var.role}"
   handler = "hello_lambda.handler"
-  runtime = "node.js10"
+  runtime = "nodejs8.10"
 
-  environment {
-    variables = {
-      greeting = "Welcome to Harness Terraform Lambda Demo"
-    }
-  }
+  # environment {
+  #   variables = {
+  #     greeting = "Welcome to Harness Terraform Lambda Demo"
+  #   }
+  # }
 }
