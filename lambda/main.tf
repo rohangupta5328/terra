@@ -22,8 +22,8 @@ resource "aws_lambda_function" "lambda" {
   source_code_hash = "${data.archive_file.zip.output_base64sha256}"
 
   role = "${var.role}"
-  handler = "hello_lambda.lambda_handler"
-  runtime = "python3.6"
+  handler = "hello_lambda.handler"
+  runtime = "node.js10"
 
   environment {
     variables = {
