@@ -6,7 +6,7 @@ variable "aws_region" {
 variable "s3_bucket_name" {
     type = "string"
     description = "S3 bucket name"
-    defualt = "rohan-bb-bucket"
+    default = "rohan-bb-bucket"
 }
 
 variable "s3_bucket_region" {
