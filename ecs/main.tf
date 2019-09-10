@@ -1,3 +1,9 @@
+provider "aws" {
+
+    region = "${var.aws_region}"
+  
+}
+
 resource "aws_cloudwatch_log_group" "hello_world" {
   name              = "hello_world"
   retention_in_days = 1
