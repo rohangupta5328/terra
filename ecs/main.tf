@@ -5,7 +5,7 @@ provider "aws" {
 }
 
 resource "aws_cloudwatch_log_group" "hello_world" {
-  name              = "hello_world"
+  name              = "blackbelt-ecs"
   retention_in_days = 1
 }
 
@@ -16,7 +16,7 @@ resource "aws_ecs_task_definition" "blackbelt-ecs" {
 [
   {
     "name": "harness_bb_ecs_demo",
-    "image": "hello_world",
+    "image": "hello-world",
     "cpu": 0,
     "memory": 128,
     "logConfiguration": {
