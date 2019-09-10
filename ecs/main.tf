@@ -9,8 +9,8 @@ resource "aws_cloudwatch_log_group" "hello_world" {
   retention_in_days = 1
 }
 
-resource "aws_ecs_task_definition" "hello_world" {
-  family = "hello_world"
+resource "aws_ecs_task_definition" "blackbelt-ecs" {
+  family = "blackbelt-ecs"
 
   container_definitions = <<EOF
 [
