@@ -16,7 +16,7 @@ resource "aws_ecs_task_definition" "blackbelt-ecs" {
 [
   {
     "name": "harness_bb_ecs_demo",
-    "image": "hello-world",
+    "image": "hello_world",
     "cpu": 0,
     "memory": 128,
     "logConfiguration": {
