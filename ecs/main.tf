@@ -4,7 +4,7 @@ provider "aws" {
   
 }
 
-resource "aws_cloudwatch_log_group" "hello_world" {
+resource "aws_cloudwatch_log_group" "hello-world" {
   name              = "blackbelt-ecs"
   retention_in_days = 1
 }
@@ -32,8 +32,8 @@ resource "aws_ecs_task_definition" "blackbelt-ecs" {
 EOF
 }
 
-resource "aws_ecs_service" "hello_world" {
-  name = "hello_world"
+resource "aws_ecs_service" "hello-world" {
+  name = "hello-world"
   cluster = "${var.cluster_id}"
   task_definition = "$aws_ecs_task_definition.hello_world.arn"
 
