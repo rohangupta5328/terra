@@ -6,7 +6,7 @@ provider "aws" {
     region = "${var.aws_region}"
 }
 
-resource "aws_instance" "ubuntu" {
+resource "aws_instance" "jenkins-server" {
     ami = "${var.ami_id}"
     instance_type = "${var.instance_type}"
     key_name = "${var.aws_key}"
