@@ -22,3 +22,15 @@ tags {
 }
 
 
+
+# resource "aws_instance" "harness-delegate" {
+#     ami = "${var.ami_id}"
+#     instance_type = "${var.instance_large}"
+#     key_name = "${var.aws_key}"
+#     count = 1
+
+#     tags {
+#         Name = "${var.delegate}"
+
+#     }
+# }

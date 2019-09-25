@@ -18,5 +18,14 @@ variable "name" {
     default = "Provisioned by Terraform"
 }
 
+variable "delegate" {
+    default = "delegate"
+    description = "harness delegate tag"
+}
+
+variable "instance_large" {
+    default = "t2.large"
+    description = "provisioning a large instance"
+}
 
 variable "aws_key" {}
