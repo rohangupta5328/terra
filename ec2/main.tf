@@ -10,6 +10,7 @@ resource "aws_instance" "jenkins-server" {
     ami = "${var.ami_id}"
     instance_type = "${var.instance_type}"
     key_name = "${var.aws_key}"
+    count = 2
 
 
 
@@ -19,3 +20,5 @@ tags {
 
 
 }
+
+
