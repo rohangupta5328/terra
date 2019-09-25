@@ -1,3 +1,7 @@
-# output "public_dns" {
-#     value = "${aws_instance.ubuntu.public_dns}"
-# }
+output "region" {
+    value = "${aws_instance.jenkins-server.region}"
+}
+
+output "ami" {
+    value = "${aws_instance.jenkins-server.ami}"
+}
