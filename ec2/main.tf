@@ -34,11 +34,9 @@ resource "aws_instance" "ec2" {
     key_name = "${var.aws_key}"
     count = 3
 
-
-
-tags = {
-    Name = "${var.name}"
-}
+    tags = {
+        Name = "${var.name}"
+    }
 
 
 }

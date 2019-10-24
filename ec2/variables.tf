@@ -19,7 +19,7 @@ variable "instance_type" {
 
 variable "name" {
     description = "name to pass to Name tag"
-    default = "Provisioned by Terraform"
+    default = "RohanTF"
 }
 
 variable "aws_key" {}
