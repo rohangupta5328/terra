@@ -37,6 +37,9 @@ resource "aws_instance" "ec2" {
 
     tags = {
         Name = "${var.name}"
+        environment = "dev"
+        example = "terraform"
+        deployment = "war"
     }
 
 
