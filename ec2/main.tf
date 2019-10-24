@@ -10,7 +10,6 @@ terraform {
     bucket = "rohan-tf-remote-state"
     key = "terraform.tfstate"
     region = "us-east-1"
-
     }
 }
 
@@ -37,7 +36,7 @@ resource "aws_instance" "ec2" {
 
 
 
-tags {
+tags = {
     Name = "${var.name}"
 }
 
