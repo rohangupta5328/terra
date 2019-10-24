@@ -33,7 +33,7 @@ resource "aws_instance" "ec2" {
     instance_type = "${var.instance_type}"
     key_name = "${var.aws_key}"
     count = 3
-    associate_public_ip_address = "true"
+
 
     tags = {
         Name = "${var.name}"
