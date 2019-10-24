@@ -1,6 +1,6 @@
 provider "aws" {
-    access_key = "${var.access_key}"
-    secret_key = "${var.secret_key}"
+    # access_key = "${var.access_key}"
+    # secret_key = "${var.secret_key}"
     region = "${var.aws_region}"
     
 }
@@ -10,6 +10,8 @@ terraform {
     bucket = "rohan-bb-terra"
     key = "terraform.tfstate"
     region = "us-east-1"
+    access_key = "${var.access_key}"
+    secret_key = "${var.secret_key}"
     }
 }
 
