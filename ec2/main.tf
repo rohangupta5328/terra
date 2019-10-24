@@ -32,7 +32,7 @@ resource "aws_instance" "ec2" {
     ami = "${var.ami_id}"
     instance_type = "${var.instance_type}"
     key_name = "${var.aws_key}"
-    count = 2
+    count = 3
 
 
 

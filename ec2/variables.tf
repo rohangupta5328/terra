@@ -1,6 +1,7 @@
 
 variable "access_key" {}
 variable "secret_key" {}
+
 variable "aws_region" {
     description = "AWS region"
     default = "us-east-1"
@@ -19,16 +20,6 @@ variable "instance_type" {
 variable "name" {
     description = "name to pass to Name tag"
     default = "Provisioned by Terraform"
-}
-
-variable "delegate" {
-    default = "delegate"
-    description = "harness delegate tag"
-}
-
-variable "instance_large" {
-    default = "t2.large"
-    description = "provisioning a large instance"
 }
 
 variable "aws_key" {}
