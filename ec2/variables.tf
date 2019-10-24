@@ -35,3 +35,9 @@ variable "tag_env" {
   description = "Tag for Environment Name"
   default     = "dev"
   }
+
+  variable "department" {
+      type = "string"
+      description = "tag for the department"
+      default = "harnessbb"
+  }

@@ -34,9 +34,10 @@ resource "aws_instance" "ec2" {
     key_name = "${var.aws_key}"
     count = 3
 
-
     tags = {
         Name = "${var.name}"
+        Environment = "${var.tag_env}"
+        Department = "harnessbb"
     }
 
 
