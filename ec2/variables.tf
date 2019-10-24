@@ -1,3 +1,6 @@
+
+variable "access_key" {}
+variable "secret_key" {}
 variable "aws_region" {
     description = "AWS region"
     default = "us-east-1"
@@ -29,3 +32,15 @@ variable "instance_large" {
 }
 
 variable "aws_key" {}
+
+variable "s3_bucket_name" {
+  type        = "string"
+  description = "Name of the S3 bucket to be created used to store the remote state file"
+  default     = "rohan-bb-terra"
+  }
+
+variable "tag_env" {
+  type        = "string"
+  description = "Tag for Environment Name"
+  default     = "dev"
+  }
