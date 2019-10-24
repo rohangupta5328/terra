@@ -6,7 +6,7 @@ provider "aws" {
     region = "${var.aws_region}"
 }
 
-resource "aws_instance" "jenkins-server" {
+resource "aws_instance" "ec2" {
     ami = "${var.ami_id}"
     instance_type = "${var.instance_type}"
     key_name = "${var.aws_key}"
@@ -23,14 +23,3 @@ tags {
 
 
 
-# resource "aws_instance" "harness-delegate" {
-#     ami = "${var.ami_id}"
-#     instance_type = "${var.instance_large}"
-#     key_name = "${var.aws_key}"
-#     count = 1
-
-#     tags {
-#         Name = "${var.delegate}"
-
-#     }
-# }
