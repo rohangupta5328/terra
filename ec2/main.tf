@@ -40,8 +40,7 @@ resource "aws_instance" "ec2" {
         environment = "dev"
         example = "terraform"
         deployment = "war"
-        user = "rohan"
-        department = "blackbelt"
+
     }
 
 
