@@ -10,7 +10,13 @@ terraform {
     bucket = "ec2-remote-state"
     key    = "terraform.tfstate"
     region = "us-east-1"
+      
+    workspaces {
+     name = "my-app-prod"
+    }
   }
+    
+    
 }
 
 
