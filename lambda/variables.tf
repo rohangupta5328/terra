@@ -3,4 +3,8 @@ variable "aws_region" {
     description = "Northern Virginia Region for AWS us-east-1"
 }
 
+variable "aws_access_key" {}
+
+variable "aws_secret_key" {} 
+
 variable "role" {}
