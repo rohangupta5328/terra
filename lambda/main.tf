@@ -1,10 +1,17 @@
 provider "aws" {
-
     region = "${var.aws_region}"
+    access = "${var.aws_access_key}"
+    secret = "${var.aws_secret_key}"
   
 }
 
-provider "archive" {}
+terraform {
+  backend "s3" {
+    bucket = "ec2-remote-state"
+    key    = "terraform.tfstate"
+    region = "us-east-1"
+  }
+}
 
 
 data "archive_file" "zip" {
