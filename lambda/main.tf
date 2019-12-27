@@ -5,7 +5,7 @@ provider "aws" {
 terraform {
   backend "s3" {
     bucket = "ec2-remote-state"
-    key    = "terraform.tfstate"
+    key    = "/harness/bb/rohan/terraform.tfstate"
     region = "us-east-1"
   }
     
