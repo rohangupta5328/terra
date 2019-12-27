@@ -8,12 +8,8 @@ provider "aws" {
 terraform {
   backend "s3" {
     bucket = "ec2-remote-state"
-    key    = "terraform.tfstate"
+    key    = "my-app-prod/terraform.tfstate"
     region = "us-east-1"
-      
-    workspaces {
-     name = "my-app-prod"
-    }
   }
     
     
