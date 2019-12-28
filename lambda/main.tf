@@ -31,9 +31,4 @@ resource "aws_lambda_function" "lambda" {
   handler = "hello_lambda.handler"
   runtime = "nodejs8.10"
 
-  # environment {
-  #   variables = {
-  #     greeting = "Welcome to Harness Terraform Lambda Demo"
-  #   }
-  # }
 }
