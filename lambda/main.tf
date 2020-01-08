@@ -29,6 +29,6 @@ resource "aws_lambda_function" "lambda" {
 
   role = "${var.role}"
   handler = "hello_lambda.handler"
-  runtime = "nodejs8.10"
+  runtime = "nodejs10.x"
 
 }
