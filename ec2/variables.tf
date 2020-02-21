@@ -10,7 +10,7 @@ variable "ami_id" {
 
 variable "instance_type" {
     description = "type of EC2 instance to provision."
-    default = "t2.micro"
+    default = "t2.large"
 }
 
 variable "name" {
@@ -23,9 +23,5 @@ variable "delegate" {
     description = "harness delegate tag"
 }
 
-variable "instance_large" {
-    default = "t2.large"
-    description = "provisioning a large instance"
-}
 
 variable "aws_key" {}
