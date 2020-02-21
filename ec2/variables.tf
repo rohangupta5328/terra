@@ -18,10 +18,4 @@ variable "name" {
     default = "Provisioned by Terraform"
 }
 
-variable "delegate" {
-    default = "delegate"
-    description = "harness delegate tag"
-}
-
-
 variable "aws_key" {}
