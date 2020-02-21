@@ -13,9 +13,4 @@ variable "instance_type" {
     default = "t2.large"
 }
 
-variable "name" {
-    description = "name to pass to Name tag"
-    default = "Provisioned by Terraform"
-}
-
 variable "aws_key" {}
