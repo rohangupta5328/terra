@@ -1,5 +1,5 @@
 terraform {
-    required_version = ">= 0.11.0"
+    required_version = ">= 0.12.0"
 }
 
 provider "aws" {
@@ -12,13 +12,6 @@ resource "aws_instance" "ec2" {
     instance_type = "${var.instance_type}"
     key_name = "${var.aws_key}"
     count = 2
-
-
-
-tags {
-    Name = "${var.name}"
-}
-
 
 }
 
