@@ -26,7 +26,7 @@ resource "aws_instance" "ec2" {
         Name        = "RohanDemoTraditional"
         Environment = "Dev"
         User        = "Rohan"
-        Demo.       = "ec2"
+        Demo        = "ec2"
       }
 
 }
