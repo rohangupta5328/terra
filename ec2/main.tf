@@ -21,6 +21,13 @@ resource "aws_instance" "ec2" {
     instance_type = "${var.instance_type}"
     key_name = "${var.aws_key}"
     count = 2
+    
+      tags = {
+        Name        = "RohanDemoTraditional"
+        Environment = "Dev"
+        User        = "Rohan"
+        Demo.       = "ec2"
+      }
 
 }
 
