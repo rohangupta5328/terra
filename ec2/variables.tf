@@ -14,3 +14,5 @@ variable "instance_type" {
 }
 
 variable "aws_key" {}
+variable "access_key" {}
+variable "secret_key" {}
