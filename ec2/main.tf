@@ -2,7 +2,7 @@ terraform {
     required_version = ">= 0.12.0"
 
     backend "s3" {
-        bucket = "ec2-remote-state"
+        bucket = "rohan-ec2-remote-state"
         key    = "ec2.tfstate"
         region = "us-east-1"
   }   
